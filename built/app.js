@@ -134,7 +134,7 @@ APP.action(async (args) => {
                     transactionTime: manifest.transactionTime,
                     outputFileCount: manifest.output.length,
                     deletedFileCount: manifest.deleted?.length || 0,
-                    errorFileCount: manifest.error.length
+                    errorFileCount: manifest.error?.length || 0
                 }
             });
         });
